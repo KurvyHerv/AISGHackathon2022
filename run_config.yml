@@ -1,0 +1,8 @@
+nodes:
+- input.live:
+    resize: {"do_resizing":True, "width":1280, "height":800}
+- model.yolo_face
+- draw.bbox:
+    show_labels: True
+- output.screen
+- custom_nodes.output.csv_writer
